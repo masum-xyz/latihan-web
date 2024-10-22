@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFA to Regex and FSA Production Rules</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="nfa">
+        <h2>NFA to Regular Expression and FSA Production Rules</h2>
+        <p><strong>States:</strong> q0, q1, q2, q3, q4, q5</p>
+        <p><strong>Alphabet:</strong> {0, 1}</p>
+        <p><strong>Transitions:</strong></p>
+        <ul>
+            <li>q0: 1 → q1, 0 → q2</li>
+            <li>q1: 1 → q3</li>
+            <li>q2: 1 → q5</li>
+            <li>q3: 0 → q4</li>
+            <li>q4: 1 → q1</li>
+            <li>q5: 0, 1 → q5 (loop)</li>
+        </ul>
+        <p><strong>Initial State:</strong> q0</p>
+        <p><strong>Final States:</strong> q3, q5</p>
+        <button class="button" onclick="generateRegex()">Generate Regular Expression</button>
+        <button class="button" onclick="displayProductions()">Show FSA Production Rules</button>
+
+        <div class="result" id="result"></div>
+        <div class="result" id="rg-result"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

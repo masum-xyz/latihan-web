@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFA Simulator</title>
+    <link rel="stylesheet" href="testing.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>NFA Simulator</h1>
+        <label for="inputString">Input String (0s and 1s):</label>
+        <input type="text" id="inputString" placeholder="Enter input string">
+        <button onclick="simulateNFA()">Simulate</button>
+
+        <h2>State Transitions</h2>
+        <div id="result"></div>
+    </div>
+    <script src="nfa.js"></script>
+</body>
+
+</html>
