@@ -9,7 +9,6 @@ const delta = {
     "q4": { "1": ["q2", "q3"] }
 };
 const initialState = "q0";
-// Final states are q0, q2, q4
 const acceptingStates = new Set(["q0", "q2", "q4"]);
 
 // Function to simulate the NFA with branching paths
@@ -45,15 +44,15 @@ function simulateNFA() {
             return;
         }
 
-        // For each possible next state, recursively simulate the next step
+        // For each 
         nextStates.forEach(nextState => {
             simulatePath(new Set([nextState]), inputIndex + 1, `${path} -> ${nextState}`);
         });
     }
 
-    // Start simulation from the initial state
+    // mulai codemya
     simulatePath(new Set([initialState]), 0, `q0`);
 
-    // Display the results
+    // tampilkan hasil
     document.getElementById('result').innerHTML = results.join("<br>");
 }

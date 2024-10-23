@@ -1,4 +1,4 @@
-// Define the NFA
+// Define the DFA
 const q = new Set(["q0", "q1", "q2", "q3", "q4"]);
 const sigma = new Set(["0", "1"]);
 const delta = {
